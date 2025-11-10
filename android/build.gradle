@@ -1,0 +1,35 @@
+buildscript {
+  ext {
+    buildToolsVersion = "34.0.0"
+    minSdkVersion = 24
+    compileSdkVersion = 34
+    targetSdkVersion = 34
+  }
+
+  repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://download.cpdn.cryptopro.ru/java/maven/' }
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:8.0.0'
+    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0'
+  }
+}
+
+subprojects {
+  repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://download.cpdn.cryptopro.ru/java/maven/' }
+  }
+}
+
+ext {
+  react = [
+    version: '0.73.0'
+  ]
+}

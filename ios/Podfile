@@ -1,0 +1,12 @@
+platform :ios, '12.0'
+
+target 'RNCryptoProRutoken' do
+  pod 'React-Core'
+  pod 'React-RCTBridge'
+  pod 'React-RCTImage'
+
+  # CryptoPro и Rutoken SDKs
+  # Заменить на актуальные версии
+  # pod 'CryptoPro-CSP'
+  # pod 'Rutoken'
+end

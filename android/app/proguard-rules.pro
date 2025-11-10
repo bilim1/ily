@@ -1,0 +1,7 @@
+-keep class ru.crypto.** { *; }
+-keep class ru.rutoken.** { *; }
+-keep class com.cryptoproruto.** { *; }
+-keep @interface * { *; }
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-keep public class * extends java.lang.Exception
